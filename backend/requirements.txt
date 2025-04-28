@@ -1,0 +1,9 @@
+# Required packages for Medical Chatbot Backend
+# Compatible with Python 3.12 (not 3.13)
+fastapi==0.104.1
+uvicorn==0.23.2
+google-generativeai>=0.7.0
+python-dotenv==1.0.0
+pydantic==2.7.4  # Requires Python 3.12 or lower
+httpx==0.25.0
+python-multipart==0.0.6 
