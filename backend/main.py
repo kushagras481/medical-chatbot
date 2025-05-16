@@ -55,8 +55,16 @@ async def chat(request: ChatRequest):
     # Get response from Gemini
     result = await generate_medical_response(request.query)
     
+    references = result.get("references", [])
+    answer = result.get("response", "")
+
+    references_block = "References\n" + "\n".join(references) if references else "References\n(No references found)"
+    answer_block = "Answer\n" + answer
+
+    combined_response = f"{references_block}\n\n{answer_block}"
+    
     return ChatResponse(
-        response=result["response"],
+        response=combined_response,
         references=result["references"],
         query=result["query"],
         error=result["error"]
