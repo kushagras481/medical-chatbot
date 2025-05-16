@@ -2,6 +2,7 @@ import os
 import google.generativeai as genai
 from dotenv import load_dotenv
 from rag import answer_medical_question
+from obfuscator import obfuscate_text  
 
 # Load environment variables
 load_dotenv()
@@ -130,7 +131,7 @@ async def generate_medical_response(query):
     
     try:
         # Redact sensitive information
-        redacted_query = redact_sensitive_data(query)
+        redacted_query = obfuscate_text(query)
         
         # Call into rag.py
         result = answer_medical_question(
