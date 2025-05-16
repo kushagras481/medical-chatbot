@@ -1,0 +1,354 @@
+[
+  {
+    "timestamp": "2025-05-16T18:01:04.965805Z",
+    "question": "test",
+    "query": "diagnostic tests, routine[MeSH Terms] OR \"routine diagnostic tests\"[TIAB]",
+    "cer": 0.5,
+    "cited_sentences": [
+      {
+        "sentence": "There are routine tests, which are common and used often [24].",
+        "citation": 24,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "New and faster tests are being developed, like point-of-care tests that give results quickly [7, 16] and Nano-ELISA which uses tiny particles to find diseases like toxoplasmosis better [4].",
+        "citation": 4,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:06:26.840715Z",
+    "question": "HI my name is <PERSON_NAME>. I am <AGE> years old. How can I maintain my health and well-being",
+    "query": "Health Promotion[MeSH Terms] OR Wellness[MeSH Terms] OR Wellbeing[TIAB] OR \"health maintenance\"[TIAB] OR \"disease prevention\"[MeSH Terms] OR \"preventive medicine\"[MeSH Terms]",
+    "cer": 1.0,
+    "cited_sentences": [
+      {
+        "sentence": "Things like good sanitation, refrigeration, and understanding the dangers of tobacco have made a big difference in preventing diseases in the past [1].",
+        "citation": 1,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "The Affordable Care Act also aimed to improve public health by expanding insurance coverage and funding public health programs [11].",
+        "citation": 11,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "New technologies like health apps and wearable devices can also help people take control of their health and manage chronic diseases [17].",
+        "citation": 17,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "However, it's important to make sure these digital tools are effective and that we understand how they impact people [19].",
+        "citation": 19,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "For older adults, health promotion and disease prevention are still very important, and it's never too late to start [15].",
+        "citation": 15,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Remember, healthcare systems should focus on preventing diseases before they happen, not just treating them after they start [26].",
+        "citation": 26,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:13:47.293053Z",
+    "question": "Hi my name is <PERSON_NAME>. I am 20 years old. How can i maintain my health and well-being",
+    "query": "Health Promotion[Mesh Terms] OR Wellness[TIAB] OR Well-being[TIAB] OR \"Preventive Medicine\"[Mesh Terms] OR \"Healthy Lifestyle\"[Mesh Terms] OR Health Maintenance[TIAB]",
+    "cer": 1.0,
+    "cited_sentences": [
+      {
+        "sentence": "It involves things like eating healthy foods, being active, getting enough sleep, managing stress, and avoiding harmful substances [1].",
+        "citation": 1,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:18:41.500807Z",
+    "question": "Hi my name <PERSON_NAME>. how can i maintain health and well-being",
+    "query": "Health Promotion[MeSH Terms] OR \"Wellness\"[MeSH Terms] OR \"Well-Being\"[TIAB] OR \"Maintain health\"[TIAB]",
+    "cer": 1.0,
+    "cited_sentences": [
+      {
+        "sentence": "Studies show that programs to prevent mental health problems and improve well-being can be cost-effective for kids, teens, and adults [1].",
+        "citation": 1,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Nurses also play a big role in helping people stay healthy [2].",
+        "citation": 2,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "At work, health programs can help employees be healthier and more productive, but it's important to design them well [3].",
+        "citation": 3,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Different ideas about health promotion can help us create better programs for communities [4].",
+        "citation": 4,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Even simple things like Reiki sessions can improve how people feel, both physically and mentally [6].",
+        "citation": 6,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "For specific groups, like older adults who have moved from another country, certain activities and support can help them stay healthy [13].",
+        "citation": 13,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Also, focusing on worker's total health, including safety and well-being, is a new way to make workplaces healthier [17].",
+        "citation": 17,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:23:18.031635Z",
+    "question": "hi im <PERSON_NAME>. How can i maintain my health and well-being",
+    "query": "Health Promotion[MeSH Terms] OR \"Wellness\"[TIAB] OR \"Well-being\"[TIAB] OR \"Staying Healthy\"[TIAB] OR \"Maintain Health\"[TIAB]",
+    "cer": 0.05555555555555555,
+    "cited_sentences": [
+      {
+        "sentence": "It includes things like eating healthy, being active, managing stress, and having good relationships [2], [3], [4].",
+        "citation": 2,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "It includes things like eating healthy, being active, managing stress, and having good relationships [2], [3], [4].",
+        "citation": 3,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "It includes things like eating healthy, being active, managing stress, and having good relationships [2], [3], [4].",
+        "citation": 4,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "You can find health promotion in different places, like schools [3], workplaces [16], and even online through cool apps that help you track your well-being [9], [21].",
+        "citation": 3,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "You can find health promotion in different places, like schools [3], workplaces [16], and even online through cool apps that help you track your well-being [9], [21].",
+        "citation": 16,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "You can find health promotion in different places, like schools [3], workplaces [16], and even online through cool apps that help you track your well-being [9], [21].",
+        "citation": 9,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "You can find health promotion in different places, like schools [3], workplaces [16], and even online through cool apps that help you track your well-being [9], [21].",
+        "citation": 21,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 19,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 20,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 30,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 15,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 22,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Lots of people are working on ways to make health promotion better, especially for students [19], [20], [30], doctors [15], [22] and other professionals [27], who often face extra stress.",
+        "citation": 27,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "They're finding that understanding how our bodies and minds work can help us make better choices and feel happier [6].",
+        "citation": 6,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "They are also developing programs to help men with mental health [8], [11].",
+        "citation": 8,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "They are also developing programs to help men with mental health [8], [11].",
+        "citation": 11,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "It's important for everyone to have access to these programs and feel comfortable using them [24], [25].",
+        "citation": 24,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "It's important for everyone to have access to these programs and feel comfortable using them [24], [25].",
+        "citation": 25,
+        "verdict": "no",
+        "valid": false
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:24:10.210494Z",
+    "question": "how can i tell if one of my <SYMPTOMS> is cancerous",
+    "query": "Neoplasms [MeSH Terms] OR Cancer [TIAB] OR Malignancy [TIAB] AND Symptoms [MeSH Terms] OR Sign [TIAB] OR Indicator [TIAB]",
+    "cer": 0.5,
+    "cited_sentences": [
+      {
+        "sentence": "For example, a sudden outbreak of skin growths [6], certain skin conditions [10], unexplained itching [18], or even problems with your voice [21] could be a clue that something deeper is going on.",
+        "citation": 6,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "For example, a sudden outbreak of skin growths [6], certain skin conditions [10], unexplained itching [18], or even problems with your voice [21] could be a clue that something deeper is going on.",
+        "citation": 10,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "For example, a sudden outbreak of skin growths [6], certain skin conditions [10], unexplained itching [18], or even problems with your voice [21] could be a clue that something deeper is going on.",
+        "citation": 18,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "For example, a sudden outbreak of skin growths [6], certain skin conditions [10], unexplained itching [18], or even problems with your voice [21] could be a clue that something deeper is going on.",
+        "citation": 21,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Sometimes, cancer spreads to the eyes [2], skin [15], or even nerves [23], causing unusual symptoms.",
+        "citation": 2,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Sometimes, cancer spreads to the eyes [2], skin [15], or even nerves [23], causing unusual symptoms.",
+        "citation": 15,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Sometimes, cancer spreads to the eyes [2], skin [15], or even nerves [23], causing unusual symptoms.",
+        "citation": 23,
+        "verdict": "no",
+        "valid": false
+      },
+      {
+        "sentence": "Doctors use imaging techniques like ultrasound [8, 24, 29], PET/CT scans [14], and MRIs [17, 22] to help find and understand these hidden cancers.",
+        "citation": 14,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:25:34.884846Z",
+    "question": "hi I am <PERSON_NAME>. How can i tell if my lump is cancerous?",
+    "query": "Neoplasms [MeSH Terms] OR Cancer [TIAB] OR Malignancy [TIAB] OR \"Tumor\"[TIAB] OR \"lump\"[TIAB] AND Diagnosis [MeSH Terms] OR Differential Diagnosis [MeSH Terms] OR \"self-examination\"[TIAB] OR \"diagnosis\"[TIAB] OR \"is it cancer\"[TIAB]",
+    "cer": 1.0,
+    "cited_sentences": [
+      {
+        "sentence": "For example, a neck mass in adults is more likely to be cancer than in children [1].",
+        "citation": 1,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "It is important to consider cancer as a possibility when symptoms don't go away or when you have multiple symptoms that could point to it [18].",
+        "citation": 18,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  },
+  {
+    "timestamp": "2025-05-16T18:32:05.528918Z",
+    "question": "hi my name is <PERSON_NAME>. How can i tell my <SYMPTOMS> is cancerous or not?",
+    "query": "Neoplasms[MeSH Terms] OR Cancer[TIAB] OR Malignancy[TIAB] AND Diagnosis[MeSH Terms] OR Differential Diagnosis[MeSH Terms] OR early detection[TIAB] OR screening[TIAB] AND Symptoms[MeSH Terms] OR symptom[TIAB]",
+    "cer": 1.0,
+    "cited_sentences": [
+      {
+        "sentence": "For instance, a neck mass in adults is often considered malignant until proven otherwise [3].",
+        "citation": 3,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Specialized techniques and tools can help, such as dermatoscopes for skin cancer [2], or deep learning networks for gastric cancer [15].",
+        "citation": 2,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Specialized techniques and tools can help, such as dermatoscopes for skin cancer [2], or deep learning networks for gastric cancer [15].",
+        "citation": 15,
+        "verdict": "yes",
+        "valid": true
+      },
+      {
+        "sentence": "Since cancer can cause pain, it is important to do a careful differential diagnosis [10].",
+        "citation": 10,
+        "verdict": "yes",
+        "valid": true
+      }
+    ]
+  }
+]

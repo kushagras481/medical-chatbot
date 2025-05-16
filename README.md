@@ -1,6 +1,6 @@
 # Medical Chatbot
 
-A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and Python/Gemini backend.
+A sophisticated medical advice chatbot with Next.js frontend, FastAPI intermediary, and Python/Gemini backend. Features Retrieval-Augmented Generation (RAG) with PubMed integration for evidence-based responses.
 
 ## Project Structure
 
@@ -13,6 +13,8 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
   - FastAPI for API endpoints
   - Google Gemini 2.0 Flash model integration
   - Few-shot learning prompts for better medical responses
+  - PubMed RAG integration for evidence-based answers
+  - Citation verification and self-feedback mechanisms
   - Sensitive data redaction
 
 ## Tech Stack
@@ -28,6 +30,8 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
 - Python 3.12
 - FastAPI
 - Google Generative AI (Gemini 2.0 Flash)
+- Biopython for PubMed integration
+- RAG (Retrieval-Augmented Generation) pipeline
 - Uvicorn ASGI server
 
 ## Setup Instructions
@@ -37,6 +41,7 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
 - Node.js (v16+)
 - Python 3.12 (Python 3.13 is not currently supported due to dependency issues)
 - Google Gemini API key
+- NCBI/PubMed account (optional, for higher rate limits)
 
 ### Backend Setup
 
@@ -63,10 +68,12 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file with your Gemini API key:
+4. Create a `.env` file with your API keys:
    ```
    GEMINI_API_KEY=your_gemini_api_key_here
+   ENTREZ_EMAIL=your_email@example.com  # For PubMed API
    PORT=8000
+   DEBUG=0  # Set to 1 for detailed RAG logs
    ```
 
 5. Start the FastAPI server:
@@ -103,6 +110,9 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
 ## Features
 
 - Medical advice chatbot using Google Gemini API
+- PubMed-based RAG for evidence-based medical responses
+- Citation verification and self-feedback mechanisms
+- Citation Effectiveness Ratio (CER) monitoring
 - Simple and accessible chat interface
 - Hospital-friendly styling with medical-themed color scheme
 - Sensitive data redaction for privacy
@@ -111,20 +121,33 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
 - Real-time chat with loading states
 - Error handling for API failures
 
+## RAG Architecture
+
+The chatbot uses a sophisticated Retrieval-Augmented Generation (RAG) pipeline:
+
+1. User query is transformed into an effective PubMed search query
+2. Relevant medical abstracts are retrieved from PubMed
+3. Gemini model generates an answer with inline citations
+4. Self-feedback mechanism improves citation coverage (multiple iterations)
+5. Citation verification ensures accurate references
+6. Automatic answer regeneration when invalid citations are detected
+7. Citation Effectiveness Ratio (CER) monitoring for quality control
+
 ## Usage
 
 1. Type a medical question in the input box
 2. Click "Ask" or press Enter
-3. The AI will generate a patient-friendly response
+3. The AI generates an evidence-based response with PubMed citations
 4. Continue the conversation as needed
 
 ## API Flow
 
 1. User sends query through the frontend
 2. Frontend sends POST request to `/api/chat` endpoint
-3. Backend processes request and sends to Gemini API
-4. Gemini generates response with medical few-shot prompting
-5. Response is returned to frontend and displayed to user
+3. Backend processes request through the RAG pipeline
+4. PubMed abstracts are retrieved and processed
+5. Gemini generates response with citations to medical literature
+6. Response is returned to frontend and displayed to user
 
 ## Backend API Endpoints
 
@@ -137,4 +160,6 @@ A simple medical advice chatbot with Next.js frontend, FastAPI intermediary, and
 - If you encounter errors when creating the virtual environment with `python3.12 -m venv venv`, try the alternative virtualenv method shown in the Backend Setup section.
 - If you encounter the error "Building wheel for pydantic-core did not run successfully", make sure you're using Python 3.12, not 3.13.
 - If the frontend can't connect to the backend, check that your `.env.local` has the correct API URL and the backend server is running.
-- For Gemini API errors, verify your API key is valid and properly set in the backend `.env` file. 
+- For Gemini API errors, verify your API key is valid and properly set in the backend `.env` file.
+- For PubMed integration issues, ensure you've set `ENTREZ_EMAIL` in your `.env` file.
+- If RAG responses are slow, check your internet connection as PubMed API calls require network access. 
