@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from typing import Optional
+from typing import List, Optional
 import uvicorn
 import os
 from dotenv import load_dotenv
@@ -28,8 +28,14 @@ app.add_middleware(
 class ChatRequest(BaseModel):
     query: str
     
+# class ChatResponse(BaseModel):
+#     response: str
+#     error: Optional[str] = None
+
 class ChatResponse(BaseModel):
     response: str
+    references: Optional[List[str]] = None
+    query: Optional[str] = None
     error: Optional[str] = None
 
 @app.get("/")
@@ -51,6 +57,8 @@ async def chat(request: ChatRequest):
     
     return ChatResponse(
         response=result["response"],
+        references=result["references"],
+        query=result["query"],
         error=result["error"]
     )
 
